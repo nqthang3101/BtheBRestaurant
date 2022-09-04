@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+xmlns:app="http://schemas.android.com/apk/res-auto"
+xmlns:tools="http://schemas.android.com/tools"
+android:layout_width="wrap_content"
+android:orientation="vertical"
+android:layout_height="wrap_content"
+android:background="@drawable/popup_background"
+android:paddingVertical="15dp"
+android:paddingHorizontal="@dimen/size30sp"
+tools:context=".SoLuongActivity">
+
+<EditText
+    android:padding="10dp"
+    android:id="@+id/edtThemSoLuong"
+    android:background="@color/colorWhite"
+    android:typeface="serif"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:hint="@string/soluong"
+    android:textColorHint="@color/blue"
+    android:textColor="@color/blue"
+    android:textSize="@dimen/size30sp"
+    android:inputType="number"
+    android:singleLine="true"
+    android:paddingStart="@dimen/size10dp"/>
+
+<Button
+    android:layout_gravity="center"
+    android:id="@+id/btnDongYTSL"
+    android:layout_marginTop="10dp"
+    android:typeface="serif"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/dongy"
+    android:textColor="@color/blue"
+    android:textSize="@dimen/size20sp"
+    android:backgroundTint="@color/blue_low"/>
+
+</LinearLayout>

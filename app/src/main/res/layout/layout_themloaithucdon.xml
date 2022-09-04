@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:orientation="vertical"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_background"
+    android:paddingVertical="15dp"
+    android:paddingHorizontal="@dimen/size30sp"
+    tools:context=".ThemLoaiThucDonActivity">
+
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/edtTenBanAnTLTA"
+        android:background="@color/colorWhite"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/themloaithucdon"
+        android:typeface="serif"
+        android:singleLine="true"
+        android:textColorHint="@color/blue"
+        android:textColor="@color/blue"
+        android:textSize="28sp"
+        android:paddingStart="@dimen/size10dp"/>
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btnDongYTLTA"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:typeface="serif"
+        android:text="@string/dongy"
+        android:textColor="@color/blue"
+        android:singleLine="true"
+        android:textSize="@dimen/size20sp"
+        android:backgroundTint="@color/blue_low"/>
+
+</LinearLayout>

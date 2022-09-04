@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@color/blue"
+    tools:context=".ThemThucDonActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/themthucdon"
+        android:textSize="@dimen/size30sp"
+        android:typeface="serif"
+        android:textColor="@color/white"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+            android:layout_weight="1">
+
+            <EditText
+                android:id="@+id/edtTenMonTTD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/tenmonan"
+                android:background="@color/white"
+                android:textSize="@dimen/size20sp"
+                android:textColor="@color/blue"
+                android:typeface="serif"
+                android:textColorHint="@color/blue"
+                android:singleLine="true"
+                android:layout_marginTop="10dp"
+                android:padding="5dp"/>
+
+            <EditText
+                android:id="@+id/edtGiaTTD"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/giatien"
+                android:background="@color/white"
+                android:textSize="@dimen/size20sp"
+                android:textColor="@color/blue"
+                android:textColorHint="@color/blue"
+                android:singleLine="true"
+                android:typeface="serif"
+                android:layout_marginTop="15dp"
+                android:inputType="number"
+                android:padding="5dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10"
+            android:layout_marginTop="20dp">
+
+            <Spinner
+                android:background="@color/white"
+                android:id="@+id/spLoaiMonAn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="7"
+                android:typeface="serif"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center"
+                android:paddingVertical="5dp"/>
+
+            <ImageButton
+                android:id="@+id/imbtnThemThucDon"
+                android:layout_weight="3"
+                android:layout_width="@dimen/size50dp"
+                android:layout_height="@dimen/size70dp"
+                android:src="@android:drawable/ic_input_add"/>
+        </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/imHinhThucDon"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/size150dp"
+                android:padding="10dp"
+                android:src="@drawable/picture" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:paddingHorizontal="10dp"
+        >
+
+        <Button
+            android:id="@+id/btnDongYTTD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:typeface="serif"
+            android:backgroundTint="@color/blue_low"
+            android:textColor="@color/blue"
+            android:text="@string/dongy" />
+
+        <Button
+            android:id="@+id/btnThoatTTD"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/thoat"
+            android:layout_weight="1"
+            android:typeface="serif"
+            android:layout_marginLeft="10dp"
+            android:backgroundTint="@color/blue_low"
+            android:textColor="@color/blue"/>
+    </LinearLayout>
+
+
+</LinearLayout>

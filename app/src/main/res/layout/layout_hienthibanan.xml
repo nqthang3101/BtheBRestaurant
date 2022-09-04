@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dsbanan"
+        android:typeface="serif"
+        android:textSize="@dimen/size30sp"
+        android:textColor="@color/blue"
+        android:gravity="center_horizontal"
+        android:paddingVertical="10dp"/>
+
+    <GridView
+        android:id="@+id/gvHienBanAn"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:numColumns="3"
+        android:padding="@dimen/size10dp"
+        android:background="@color/blue_low"
+        android:adjustViewBounds="true"
+        >
+    </GridView>
+</LinearLayout>

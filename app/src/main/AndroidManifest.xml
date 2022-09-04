@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.btheb">
+
+    <uses-permission
+        android:name="android.permission.MANAGE_DOCUMENTS"
+        tools:ignore="ProtectedPermissions" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.BtheB">
+        <activity
+            android:name=".SuaBanAnActivity"
+            android:exported="true"
+            android:theme="@style/PopUpActivity"
+            android:label="@string/suabanan"
+            />
+        <activity
+            android:name=".ThanhToanActivity"
+            android:exported="true" />
+        <activity
+            android:name=".SoLuongActivity"
+            android:exported="true"
+            android:label="Thêm số lượng"
+            android:theme="@style/PopUpActivity" />
+        <activity
+            android:name=".ThemLoaiThucDonActivity"
+            android:exported="true"
+            android:theme="@style/PopUpActivity"
+            android:label="@string/themthucdon"/>
+        <activity
+            android:name=".ThemThucDonActivity"
+            android:exported="true" />
+        <activity
+            android:name=".ThemBanAnActivity"
+            android:exported="true"
+            android:theme="@style/PopUpActivity"
+            android:label="@string/thembanan"/>
+        <activity
+            android:name=".TrangChuActivity"
+            android:exported="true" />
+        <activity
+            android:name=".DangNhapActivity"
+            android:exported="true">
+        </activity>
+        <activity
+            android:name=".DangKyActivity"
+            android:exported="true" />
+        <activity
+            android:name=".Splash_Screen"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+</manifest>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    tools:context=".SuaBanAnActivity"
+    android:background="@color/blue"
+    android:padding="10dp">
+
+    <EditText
+        android:padding="10dp"
+        android:id="@+id/edtSuaBanAn"
+        android:background="@color/white"
+        android:typeface="serif"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="@string/tenbanan"
+        android:textColorHint="@color/blue"
+        android:textColor="@color/blue"
+        android:textSize="@dimen/size30sp"
+        android:singleLine="true"
+        android:paddingStart="@dimen/size10dp"/>
+
+    <Button
+        android:layout_gravity="center"
+        android:id="@+id/btnDongYSBA"
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dongy"
+        android:typeface="serif"
+        android:textSize="@dimen/size20sp"
+        android:backgroundTint="@color/blue_low"
+        android:textColor="@color/blue"/>
+
+
+
+</LinearLayout>

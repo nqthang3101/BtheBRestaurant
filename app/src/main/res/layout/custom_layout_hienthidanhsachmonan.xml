@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/size20sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imHinhDSMonAn"
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:background="@drawable/backgroundheader1"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/txtTenDSMonAn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/txtGiaDSMonAn"
+            android:layout_marginBottom="0dp"
+            android:background="#99ffffff"
+            android:paddingVertical="5dp"
+            android:paddingStart="20dp"
+            android:text="@string/tenmonan"
+            android:textAllCaps="true"
+            android:textColor="@color/blue"
+            android:textSize="28sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/txtGiaDSMonAn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imHinhDSMonAn"
+            android:background="#99ffffff"
+            android:paddingVertical="5dp"
+            android:paddingStart="20dp"
+            android:text="@string/gia"
+            android:textAllCaps="true"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/size20sp"
+            android:textStyle="italic"
+            android:typeface="serif" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

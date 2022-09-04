@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="@dimen/size20sp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/imHienThiMonAn"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:background="@drawable/backgroundheader1"
+            android:scaleType="fitXY"
+            />
+
+        <TextView
+            android:id="@+id/txtHienLoaiMonAn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#99ffffff"
+            android:text="Tên loại"
+            android:textColor="@color/blue"
+            android:textSize="@dimen/size30sp"
+            android:layout_alignBottom="@+id/imHienThiMonAn"
+            android:paddingStart="20dp"
+            android:typeface="serif"
+            android:textStyle="italic"
+            android:textAllCaps="true"
+            android:paddingVertical="5dp"/>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
