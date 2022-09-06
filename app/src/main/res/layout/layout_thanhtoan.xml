@@ -77,6 +77,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Tổng tiền"
+        android:typeface="serif"
         android:layout_marginLeft="@dimen/size20sp"
         android:textColor="@color/colorBlack"
         android:textSize="@dimen/size30sp"
@@ -93,6 +94,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:backgroundTint="@color/blue"
+            android:typeface="serif"
             android:text="@string/thanhtoan"
             android:layout_margin="@dimen/size10dp"
             />
@@ -103,7 +105,9 @@
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/size10dp"
             android:layout_weight="1"
-            android:backgroundTint="@color/purple_200"
+            android:typeface="serif"
+            android:textColor="@color/white"
+            android:backgroundTint="@color/blue"
             android:text="@string/thoat" />
 
     </LinearLayout>
