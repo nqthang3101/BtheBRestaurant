@@ -32,7 +32,6 @@ public class DangNhapActivity extends AppCompatActivity implements View.OnClickL
         edtMatKhauDN = findViewById(R.id.edtMatKhauDN);
         btnDongYDN = findViewById(R.id.btnDongYDN);
         btnDangKyDN =  findViewById(R.id.btnDangKyDN);
-        
         LanDauTien();
 
         thoatapp = getIntent().getIntExtra("thoatapp",0);
@@ -55,8 +54,6 @@ public class DangNhapActivity extends AppCompatActivity implements View.OnClickL
             QuyenDAO quyenDAO = new QuyenDAO(this);
             quyenDAO.ThemQuyen("Quản lý");
             quyenDAO.ThemQuyen("Nhân viên");
-            iDangKy = new Intent(DangNhapActivity.this,DangKyActivity.class);
-            iDangKy.putExtra("landautien",1);
         }
         getSharedPreferences("PREFERENCE", MODE_PRIVATE).edit()
                 .putBoolean("isFirstRun", false).commit();
@@ -80,6 +77,8 @@ public class DangNhapActivity extends AppCompatActivity implements View.OnClickL
                 break;
 
             case R.id.btnDangKyDN:
+                iDangKy = new Intent(DangNhapActivity.this,DangKyActivity.class);
+                iDangKy.putExtra("dangnhap",1);
                 startActivity(iDangKy);
                 break;
         }

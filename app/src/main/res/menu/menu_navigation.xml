@@ -23,7 +23,7 @@
         android:id="@+id/itDangXuat"
         android:title="@string/dangxuat"
         android:checked="true"
-        android:icon="@drawable/thongke"
+        android:icon="@drawable/icon_logout"
         />
 
 </menu>

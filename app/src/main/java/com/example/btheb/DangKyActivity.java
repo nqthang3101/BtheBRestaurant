@@ -32,7 +32,7 @@ public class DangKyActivity extends AppCompatActivity implements View.OnClickLis
     QuyenDAO quyenDAO;
     TextView txtDangKy;
     int manv = 0;
-    int landautien = 0;
+    int dangnhap =0;
     Spinner spQuyen;
     List<QuyenDTO> quyenDTOS;
     List<String> dataAdapter;
@@ -65,9 +65,9 @@ public class DangKyActivity extends AppCompatActivity implements View.OnClickLis
         }
 
         manv = getIntent().getIntExtra("manv",0);
-        landautien = getIntent().getIntExtra("landautien",0);
+        dangnhap = getIntent().getIntExtra("dangnhap",0);
 
-        if (landautien == 0) {
+        if (dangnhap ==0) {
             ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,R.layout.custom_spinner_item,dataAdapter);
             spQuyen.setAdapter(adapter);
             adapter.notifyDataSetChanged();
@@ -139,9 +139,7 @@ public class DangKyActivity extends AppCompatActivity implements View.OnClickLis
                     nhanVienDTO.setGIOITINH(sGioiTinh);
                     nhanVienDTO.setCMND(sCMND);
                     nhanVienDTO.setNGAYSINH(sNgaySinh);
-                    if (landautien!= 0 ) {
-//                        quyenDAO.ThemQuyen("Quản lý");
-//                        quyenDAO.ThemQuyen("Nhân viên");
+                    if (dangnhap!= 0 ) {
                         nhanVienDTO.setMAQUYEN(1);}
                     else {
                         int vitri = spQuyen.getSelectedItemPosition();
